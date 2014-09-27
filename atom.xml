@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Web 0.0]]></title>
-  <link href="http://blog.alex-rudenko.com/atom.xml" rel="self"/>
-  <link href="http://blog.alex-rudenko.com/"/>
-  <updated>2014-09-26T20:01:51+02:00</updated>
-  <id>http://blog.alex-rudenko.com/</id>
+  <link href="http://OrKoN.github.io/atom.xml" rel="self"/>
+  <link href="http://OrKoN.github.io/"/>
+  <updated>2014-09-27T08:53:43+02:00</updated>
+  <id>http://OrKoN.github.io/</id>
   <author>
     <name><![CDATA[Alex Rudenko]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Setting Up SMTP Relay Using Postfix on Ubuntu 14.04]]></title>
-    <link href="http://blog.alex-rudenko.com/2014/09/21/setting-up-smtp-relay-using-postfix-on-ubuntu-14-dot-04/"/>
+    <link href="http://OrKoN.github.io/2014/09/21/setting-up-smtp-relay-using-postfix-on-ubuntu-14-dot-04/"/>
     <updated>2014-09-21T10:33:50+02:00</updated>
-    <id>http://blog.alex-rudenko.com/2014/09/21/setting-up-smtp-relay-using-postfix-on-ubuntu-14-dot-04</id>
+    <id>http://OrKoN.github.io/2014/09/21/setting-up-smtp-relay-using-postfix-on-ubuntu-14-dot-04</id>
     <content type="html"><![CDATA[<p>This is a small script to setup Postfix relay server on Ubuntu 14.04:</p>
 
 <div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
@@ -48,9 +48,9 @@
   
   <entry>
     <title type="html"><![CDATA[Non-interactive SSH Login Using Password]]></title>
-    <link href="http://blog.alex-rudenko.com/2014/09/21/non-interactive-ssh-login-using-password/"/>
+    <link href="http://OrKoN.github.io/2014/09/21/non-interactive-ssh-login-using-password/"/>
     <updated>2014-09-21T10:05:46+02:00</updated>
-    <id>http://blog.alex-rudenko.com/2014/09/21/non-interactive-ssh-login-using-password</id>
+    <id>http://OrKoN.github.io/2014/09/21/non-interactive-ssh-login-using-password</id>
     <content type="html"><![CDATA[<p>Sometimes it’s handy to automate some remote tasks. It’s good if there is key authentication set up, but what if only the login by password is avaiable. In this case, if you run a command like “ssh root@my.srv” you’ll be prompted to type in the password.</p>
 
 <p>You can avoid the prompty by providing the password using the sshpass app:</p>
@@ -69,9 +69,9 @@
   
   <entry>
     <title type="html"><![CDATA[Learning VCL: How to Build a VCL Component Demo]]></title>
-    <link href="http://blog.alex-rudenko.com/2014/09/21/learning-vcl-how-to-build-a-vcl-component-demo/"/>
+    <link href="http://OrKoN.github.io/2014/09/21/learning-vcl-how-to-build-a-vcl-component-demo/"/>
     <updated>2014-09-21T09:21:08+02:00</updated>
-    <id>http://blog.alex-rudenko.com/2014/09/21/learning-vcl-how-to-build-a-vcl-component-demo</id>
+    <id>http://OrKoN.github.io/2014/09/21/learning-vcl-how-to-build-a-vcl-component-demo</id>
     <content type="html"><![CDATA[<p>In my previous post, I described how to get started with the VCL. VCL is a highly modular CSS framework and unfortunately it does not have a demo/documentation page at the moment so it may be hard to guess how to use a particular component or how it looks like. So in this blog post, I will explain how to build the demo example for a VCL component. I will use the gallery component as an example.</p>
 
 <ol>
@@ -108,7 +108,7 @@
 
 <p>This will start a local web server and it will open the example page in the browser. By default, http://localhost:8000/example.html should be opened:</p>
 
-<p><img class="right" src="http://blog.alex-rudenko.com/downloads/gallery.png" title="'VCL Gallery Component'" /></p>
+<p><img class="right" src="http://OrKoN.github.io/downloads/gallery.png" title="'VCL Gallery Component'" /></p>
 
 <p>If you navigate to the root http://localhost:8000/, you’ll see all available examples for the component.</p>
 ]]></content>
@@ -116,9 +116,9 @@
   
   <entry>
     <title type="html"><![CDATA[Converting FLV to MP4 With Ubuntu Linux and Avconv]]></title>
-    <link href="http://blog.alex-rudenko.com/2014/09/21/converting-flv-to-mp4-with-ubuntu-linux-and-avconv/"/>
+    <link href="http://OrKoN.github.io/2014/09/21/converting-flv-to-mp4-with-ubuntu-linux-and-avconv/"/>
     <updated>2014-09-21T09:12:01+02:00</updated>
-    <id>http://blog.alex-rudenko.com/2014/09/21/converting-flv-to-mp4-with-ubuntu-linux-and-avconv</id>
+    <id>http://OrKoN.github.io/2014/09/21/converting-flv-to-mp4-with-ubuntu-linux-and-avconv</id>
     <content type="html"><![CDATA[<p>The FLV files aren’t good for everything. Therefore, one my want to convert an FLV file to an MP4 file. This can be done simply by using the avconv tool:</p>
 
 <div class="bogus-wrapper"><notextile><figure class="code"><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
@@ -134,9 +134,9 @@
   
   <entry>
     <title type="html"><![CDATA[Extending Your Ubuntu Desktop With Custom Indicator Applets Using Python3]]></title>
-    <link href="http://blog.alex-rudenko.com/2014/08/31/extending-your-ubuntu-desktop-with-custom-indicator-applets-using-python3/"/>
+    <link href="http://OrKoN.github.io/2014/08/31/extending-your-ubuntu-desktop-with-custom-indicator-applets-using-python3/"/>
     <updated>2014-08-31T13:37:34+02:00</updated>
-    <id>http://blog.alex-rudenko.com/2014/08/31/extending-your-ubuntu-desktop-with-custom-indicator-applets-using-python3</id>
+    <id>http://OrKoN.github.io/2014/08/31/extending-your-ubuntu-desktop-with-custom-indicator-applets-using-python3</id>
     <content type="html"><![CDATA[<p>In this blog post, I will explain how to develop your own indicator applet for the Ubuntu’s Unity desktop. The applet will reside in the top panel. The applet icon will indicate a state we’ll be monitoring. On a click on the icon, a menu will be presented which will allow changing the state.</p>
 
 <p>Before I start digging into the implementation details, I would like to elaborate on why one may need to develop his own indicator applet:</p>
@@ -302,7 +302,7 @@ apt-get install python3 libgtk-3-0 python-appindicator</p>
 
 <p>The complete source code is below:</p>
 
-<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span>&#8220;indicator.py&#8221;  (indicator.py)</span> <a href="http://blog.alex-rudenko.com/downloads/code/indicator.py">download</a></figcaption>
+<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span>&#8220;indicator.py&#8221;  (indicator.py)</span> <a href="http://OrKoN.github.io/downloads/code/indicator.py">download</a></figcaption>
 <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
 <span class="line-number">2</span>
 <span class="line-number">3</span>
@@ -445,15 +445,15 @@ The applet should appear in the top panel. </p>
   
   <entry>
     <title type="html"><![CDATA[Getting Started With a New CSS Framework Called Visual Component Library (VCL)]]></title>
-    <link href="http://blog.alex-rudenko.com/2014/08/18/getting-started-with-a-new-css-framework-called-visual-component-library-vcl/"/>
+    <link href="http://OrKoN.github.io/2014/08/18/getting-started-with-a-new-css-framework-called-visual-component-library-vcl/"/>
     <updated>2014-08-18T23:01:00+02:00</updated>
-    <id>http://blog.alex-rudenko.com/2014/08/18/getting-started-with-a-new-css-framework-called-visual-component-library-vcl</id>
+    <id>http://OrKoN.github.io/2014/08/18/getting-started-with-a-new-css-framework-called-visual-component-library-vcl</id>
     <content type="html"><![CDATA[<h2> Introduction </h2>
 <p>
 In this post I will introduce a new CSS framework called VCL that provides a plenty of highly reusable and modular CSS components which work together nicely. The VCL stands for Visual Component Library and it aims at solving very similar problems as Twitter Bootstrap. I will show how to get started with VCL using a page of a simple web blog as an example. The resulting web page will look as shown in the next image. As you can see it has very simple and minimalistic design.
 </p>
 
-<p><img class="right" src="http://blog.alex-rudenko.com/images/blog_vcl.png" title="'Resulting page created with VCL'" /></p>
+<p><img class="right" src="http://OrKoN.github.io/images/blog_vcl.png" title="'Resulting page created with VCL'" /></p>
 
 <h2>About VCL</h2>
 <p>
@@ -468,7 +468,7 @@ You will need a current version of NodeJS (I use 0.11.13) and NPM installed beca
 
 <ol>
   <li>
-	First, download a template which I prepared for this tutorial from <a href="http://blog.alex-rudenko.com/downloads/vcl_template.zip">here</a>. It&#8217;s a zip archive so extract it to any folder. I will use `~/myvcl`.
+	First, download a template which I prepared for this tutorial from <a href="http://OrKoN.github.io/downloads/vcl_template.zip">here</a>. It&#8217;s a zip archive so extract it to any folder. I will use `~/myvcl`.
   </li>
   <li>
 	As you can see the folder contains several files and a folder: <ul>
@@ -494,7 +494,7 @@ You will need a current version of NodeJS (I use 0.11.13) and NPM installed beca
   <li>Now when we have a compiled version of VCL. We can start designing a blog page. First, let&#8217;s create a folder within the HTTP web server&#8217;s root folder and copy <em>compiled.css</em> in there and the <em>fonts</em> folder into the parent folder. I use Apache HTTP server. Its root folder is /var/www and I create a folder /var/www/vcl_blog/public. So I can access it via a web browser at http://localhost/vcl_blog/public/.
   </li>
   <li>In the /var/www/vcl_blog/public/ folder create a file called <em>index.html</em> and place the following content in there:
-	<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span>&#8220;index.html&#8221;  (index.html)</span> <a href="http://blog.alex-rudenko.com/downloads/code/index.html">download</a></figcaption>
+	<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span>&#8220;index.html&#8221;  (index.html)</span> <a href="http://OrKoN.github.io/downloads/code/index.html">download</a></figcaption>
 <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
 <span class="line-number">2</span>
 <span class="line-number">3</span>
@@ -701,9 +701,9 @@ Now we&#8217;ve learned how to get started with VCL. Read more about properties 
   
   <entry>
     <title type="html"><![CDATA[Android Development Studio: Create String Resource Automatically]]></title>
-    <link href="http://blog.alex-rudenko.com/2014/05/31/android-development-studio-create-string-resource-automatically/"/>
+    <link href="http://OrKoN.github.io/2014/05/31/android-development-studio-create-string-resource-automatically/"/>
     <updated>2014-05-31T19:05:00+02:00</updated>
-    <id>http://blog.alex-rudenko.com/2014/05/31/android-development-studio-create-string-resource-automatically</id>
+    <id>http://OrKoN.github.io/2014/05/31/android-development-studio-create-string-resource-automatically</id>
     <content type="html"><![CDATA[<p>I’ve just learned a new trick: selecting a hard-coded string in an Android xml file and pressing Ctrl+1 brings a context menu where one can select to Extract Android String. This would automatically append a string resource definition to values/strings.xml and replace a hard-coded string with an auto-generated name.</p>
 
 ]]></content>
@@ -711,9 +711,9 @@ Now we&#8217;ve learned how to get started with VCL. Read more about properties 
   
   <entry>
     <title type="html"><![CDATA[Product Ideas]]></title>
-    <link href="http://blog.alex-rudenko.com/2014/03/23/ideas/"/>
+    <link href="http://OrKoN.github.io/2014/03/23/ideas/"/>
     <updated>2014-03-23T20:50:00+01:00</updated>
-    <id>http://blog.alex-rudenko.com/2014/03/23/ideas</id>
+    <id>http://OrKoN.github.io/2014/03/23/ideas</id>
     <content type="html"><![CDATA[<ol>
   <li>
     <p>a JS tool to be embedded into websites which can monitor users’ actions (scroll, select, copy, paste etc.) and store them in a warehouse for further analysis</p>
@@ -730,9 +730,9 @@ Now we&#8217;ve learned how to get started with VCL. Read more about properties 
   
   <entry>
     <title type="html"><![CDATA[How to Find Text Strings in PDF Files]]></title>
-    <link href="http://blog.alex-rudenko.com/2014/02/21/how-to-find-text-strings-in-pdf-files/"/>
+    <link href="http://OrKoN.github.io/2014/02/21/how-to-find-text-strings-in-pdf-files/"/>
     <updated>2014-02-21T20:00:00+01:00</updated>
-    <id>http://blog.alex-rudenko.com/2014/02/21/how-to-find-text-strings-in-pdf-files</id>
+    <id>http://OrKoN.github.io/2014/02/21/how-to-find-text-strings-in-pdf-files</id>
     <content type="html"><![CDATA[<p>I write my master thesis and I have a lot of literature sources which I store in a directory as PDF files. Today I needed to refer to one of the sources but I could not remember which one of them was actually supporting mine argument. I only remembered a couple of keywords from that source. So I was wondering if it’s possible to search for a string in a bunch of PDF files. And after spending some time googling, I found a neat command that does the work:</p>
 
 <div class="bogus-wrapper"><notextile><figure class="code"><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
@@ -745,9 +745,9 @@ Now we&#8217;ve learned how to get started with VCL. Read more about properties 
   
   <entry>
     <title type="html"><![CDATA[How to Configure Git for the Android Project in Eclipse]]></title>
-    <link href="http://blog.alex-rudenko.com/2013/11/19/how-to-configure-git-for-the-android-project-in-eclipse/"/>
+    <link href="http://OrKoN.github.io/2013/11/19/how-to-configure-git-for-the-android-project-in-eclipse/"/>
     <updated>2013-11-19T18:46:00+01:00</updated>
-    <id>http://blog.alex-rudenko.com/2013/11/19/how-to-configure-git-for-the-android-project-in-eclipse</id>
+    <id>http://OrKoN.github.io/2013/11/19/how-to-configure-git-for-the-android-project-in-eclipse</id>
     <content type="html"><![CDATA[<p>I’ve started a new project for Android and I’ve chosen the IDE for Android development provided by Google. This IDE is based on Eclipse
 and Android development plugin. I want to put the project under version control. In order to do this, I have to configure git properly.
 And by properly I mean that I have to exclude metadata, binary files etc from the version control. Also I want to be sure that other people would be able to import the project and build it successfully. So I did the following:</p>
@@ -774,9 +774,9 @@ And by properly I mean that I have to exclude metadata, binary files etc from th
   
   <entry>
     <title type="html"><![CDATA[Turn Your Web Browser Into Text Editor]]></title>
-    <link href="http://blog.alex-rudenko.com/2013/10/20/turn-your-web-browser-into-text-editor/"/>
+    <link href="http://OrKoN.github.io/2013/10/20/turn-your-web-browser-into-text-editor/"/>
     <updated>2013-10-20T19:53:00+02:00</updated>
-    <id>http://blog.alex-rudenko.com/2013/10/20/turn-your-web-browser-into-text-editor</id>
+    <id>http://OrKoN.github.io/2013/10/20/turn-your-web-browser-into-text-editor</id>
     <content type="html"><![CDATA[<p>There is a very simple way to turn your web browser into text editor. Just enter the following code snippet into browser’s address line
 &lt;div class=&#8217;bogus-wrapper&#8217;&gt;<notextile><figure class="code">&lt;figcaption&gt;<span></span>&lt;/figcaption&gt;&lt;div class=&#8221;highlight&#8221;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#8221;gutter&#8221;&gt;&lt;pre class=&#8221;line-numbers&#8221;&gt;<span class="line-number">1</span>
 &lt;/pre&gt;&lt;/td&gt;&lt;td class=&#8217;code&#8217;&gt;&lt;pre&gt;<code class=""><span class="line">data:text/html, &lt;html contenteditable&gt;</span></code>&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;</figure></notextile>&lt;/div&gt;</p>
@@ -795,9 +795,9 @@ And by properly I mean that I have to exclude metadata, binary files etc from th
   
   <entry>
     <title type="html"><![CDATA[Moved My Blog to Octopress Engine]]></title>
-    <link href="http://blog.alex-rudenko.com/2013/10/20/moved-my-blog-to-octopress-engine/"/>
+    <link href="http://OrKoN.github.io/2013/10/20/moved-my-blog-to-octopress-engine/"/>
     <updated>2013-10-20T19:08:00+02:00</updated>
-    <id>http://blog.alex-rudenko.com/2013/10/20/moved-my-blog-to-octopress-engine</id>
+    <id>http://OrKoN.github.io/2013/10/20/moved-my-blog-to-octopress-engine</id>
     <content type="html"><![CDATA[<p>Decided to improved a look-and-feel of my blog. Therefore, I tried the Octopress blogging platform. What differs it from others is that it generates a static html/css/js website locally, and, thus, only the static files are uploaded to the server.</p>
 
 <p>Old blog is still there: http://webzeropointzero.blogspot.com</p>

@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: Linux-commands-which-i-need-from-time-to-time-and-always-forget | Web 0.0]]></title>
-  <link href="http://blog.alex-rudenko.com/blog/categories/linux-commands-which-i-need-from-time-to-time-and-always-forget/atom.xml" rel="self"/>
-  <link href="http://blog.alex-rudenko.com/"/>
-  <updated>2014-09-26T20:01:51+02:00</updated>
-  <id>http://blog.alex-rudenko.com/</id>
+  <link href="http://OrKoN.github.io/blog/categories/linux-commands-which-i-need-from-time-to-time-and-always-forget/atom.xml" rel="self"/>
+  <link href="http://OrKoN.github.io/"/>
+  <updated>2014-09-27T08:53:43+02:00</updated>
+  <id>http://OrKoN.github.io/</id>
   <author>
     <name><![CDATA[Alex Rudenko]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Setting Up SMTP Relay Using Postfix on Ubuntu 14.04]]></title>
-    <link href="http://blog.alex-rudenko.com/2014/09/21/setting-up-smtp-relay-using-postfix-on-ubuntu-14-dot-04/"/>
+    <link href="http://OrKoN.github.io/2014/09/21/setting-up-smtp-relay-using-postfix-on-ubuntu-14-dot-04/"/>
     <updated>2014-09-21T10:33:50+02:00</updated>
-    <id>http://blog.alex-rudenko.com/2014/09/21/setting-up-smtp-relay-using-postfix-on-ubuntu-14-dot-04</id>
+    <id>http://OrKoN.github.io/2014/09/21/setting-up-smtp-relay-using-postfix-on-ubuntu-14-dot-04</id>
     <content type="html"><![CDATA[<p>This is a small script to setup Postfix relay server on Ubuntu 14.04:</p>
 
 <p><code>bash
@@ -39,9 +39,9 @@
   
   <entry>
     <title type="html"><![CDATA[Non-interactive SSH Login Using Password]]></title>
-    <link href="http://blog.alex-rudenko.com/2014/09/21/non-interactive-ssh-login-using-password/"/>
+    <link href="http://OrKoN.github.io/2014/09/21/non-interactive-ssh-login-using-password/"/>
     <updated>2014-09-21T10:05:46+02:00</updated>
-    <id>http://blog.alex-rudenko.com/2014/09/21/non-interactive-ssh-login-using-password</id>
+    <id>http://OrKoN.github.io/2014/09/21/non-interactive-ssh-login-using-password</id>
     <content type="html"><![CDATA[<p>Sometimes it’s handy to automate some remote tasks. It’s good if there is key authentication set up, but what if only the login by password is avaiable. In this case, if you run a command like “ssh root@my.srv” you’ll be prompted to type in the password.</p>
 
 <p>You can avoid the prompty by providing the password using the sshpass app:</p>
@@ -61,9 +61,9 @@
   
   <entry>
     <title type="html"><![CDATA[Converting FLV to MP4 With Ubuntu Linux and Avconv]]></title>
-    <link href="http://blog.alex-rudenko.com/2014/09/21/converting-flv-to-mp4-with-ubuntu-linux-and-avconv/"/>
+    <link href="http://OrKoN.github.io/2014/09/21/converting-flv-to-mp4-with-ubuntu-linux-and-avconv/"/>
     <updated>2014-09-21T09:12:01+02:00</updated>
-    <id>http://blog.alex-rudenko.com/2014/09/21/converting-flv-to-mp4-with-ubuntu-linux-and-avconv</id>
+    <id>http://OrKoN.github.io/2014/09/21/converting-flv-to-mp4-with-ubuntu-linux-and-avconv</id>
     <content type="html"><![CDATA[<p>The FLV files aren’t good for everything. Therefore, one my want to convert an FLV file to an MP4 file. This can be done simply by using the avconv tool:</p>
 
 <p><code>

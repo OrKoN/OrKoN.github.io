@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: Css | Web 0.0]]></title>
-  <link href="http://blog.alex-rudenko.com/blog/categories/css/atom.xml" rel="self"/>
-  <link href="http://blog.alex-rudenko.com/"/>
-  <updated>2014-09-26T20:01:51+02:00</updated>
-  <id>http://blog.alex-rudenko.com/</id>
+  <link href="http://OrKoN.github.io/blog/categories/css/atom.xml" rel="self"/>
+  <link href="http://OrKoN.github.io/"/>
+  <updated>2014-09-27T08:53:43+02:00</updated>
+  <id>http://OrKoN.github.io/</id>
   <author>
     <name><![CDATA[Alex Rudenko]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Getting Started With a New CSS Framework Called Visual Component Library (VCL)]]></title>
-    <link href="http://blog.alex-rudenko.com/2014/08/18/getting-started-with-a-new-css-framework-called-visual-component-library-vcl/"/>
+    <link href="http://OrKoN.github.io/2014/08/18/getting-started-with-a-new-css-framework-called-visual-component-library-vcl/"/>
     <updated>2014-08-18T23:01:00+02:00</updated>
-    <id>http://blog.alex-rudenko.com/2014/08/18/getting-started-with-a-new-css-framework-called-visual-component-library-vcl</id>
+    <id>http://OrKoN.github.io/2014/08/18/getting-started-with-a-new-css-framework-called-visual-component-library-vcl</id>
     <content type="html"><![CDATA[<h2> Introduction </h2>
 <p>
 In this post I will introduce a new CSS framework called VCL that provides a plenty of highly reusable and modular CSS components which work together nicely. The VCL stands for Visual Component Library and it aims at solving very similar problems as Twitter Bootstrap. I will show how to get started with VCL using a page of a simple web blog as an example. The resulting web page will look as shown in the next image. As you can see it has very simple and minimalistic design.
@@ -38,7 +38,7 @@ You will need a current version of NodeJS (I use 0.11.13) and NPM installed beca
 
 <ol>
   <li>
-	First, download a template which I prepared for this tutorial from <a href="http://blog.alex-rudenko.com/downloads/vcl_template.zip">here</a>. It&#8217;s a zip archive so extract it to any folder. I will use `~/myvcl`.
+	First, download a template which I prepared for this tutorial from <a href="http://OrKoN.github.io/downloads/vcl_template.zip">here</a>. It&#8217;s a zip archive so extract it to any folder. I will use `~/myvcl`.
   </li>
   <li>
 	As you can see the folder contains several files and a folder: <ul>
