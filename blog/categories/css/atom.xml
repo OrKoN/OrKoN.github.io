@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Css | Web 0.0]]></title>
+  <link href="http://blog.alex-rudenko.com/blog/categories/css/atom.xml" rel="self"/>
+  <link href="http://blog.alex-rudenko.com/"/>
+  <updated>2014-09-26T20:01:51+02:00</updated>
+  <id>http://blog.alex-rudenko.com/</id>
+  <author>
+    <name><![CDATA[Alex Rudenko]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Getting Started With a New CSS Framework Called Visual Component Library (VCL)]]></title>
+    <link href="http://blog.alex-rudenko.com/2014/08/18/getting-started-with-a-new-css-framework-called-visual-component-library-vcl/"/>
+    <updated>2014-08-18T23:01:00+02:00</updated>
+    <id>http://blog.alex-rudenko.com/2014/08/18/getting-started-with-a-new-css-framework-called-visual-component-library-vcl</id>
+    <content type="html"><![CDATA[<h2> Introduction </h2>
+<p>
+In this post I will introduce a new CSS framework called VCL that provides a plenty of highly reusable and modular CSS components which work together nicely. The VCL stands for Visual Component Library and it aims at solving very similar problems as Twitter Bootstrap. I will show how to get started with VCL using a page of a simple web blog as an example. The resulting web page will look as shown in the next image. As you can see it has very simple and minimalistic design.
+</p>
+
+<p><img class="right" src="/images/blog_vcl.png" title="‘Resulting page created with VCL’" ></p>
+
+<h2>About VCL</h2>
+<p>
+The VCL documentation as well as the source code is available on <a href="https://github.com/vcl/doc">GitHub</a>. A meta repository for all VCL modules is available <a href="https://github.com/vcl/vcl">here</a>.
+</p>
+<h2>Requirements</h2>
+
+<p>
+You will need a current version of NodeJS (I use 0.11.13) and NPM installed because all VCL modules are published as NPM modules. Also you will need a HTTP web server such as Apache HTTP or Nginx.
+</p>
+<h2>Building your own VCL distribution</h2>
+
+<ol>
+  <li>
+	First, download a template which I prepared for this tutorial from <a href="http://blog.alex-rudenko.com/downloads/vcl_template.zip">here</a>. It&#8217;s a zip archive so extract it to any folder. I will use `~/myvcl`.
+  </li>
+  <li>
+	As you can see the folder contains several files and a folder: <ul>
+		<li><em>fonts</em> folder is just a copy of fonts from <a href="http://fortawesome.github.io/Font-Awesome/">FontAwesome</a></li>
+		<li><em>index.styl</em> is the main script that defines how other VCL modules are processed</li>
+		<li><em>package.json</em> is a description of the VCL distro containing references to all needed VCL modules</li>
+		<li><em>vcl-override.styl</em> is a file where one can override default VCL styles</li>
+		<li><em>vcl-theme-terms.styl</em> is a file where one can define some variables which may used later on in the styles. For instance, colors. </li>
+		<li><em>vcl-var-override.styl</em> is a file where variables exposed by the VCL modules can be defined </li>
+	</ul>
+  </li>
+  <li>
+ 	Open a terminal and execute &#8220;npm install&#8221; from the `~/myvcl` folder. After that a node_modules folder will appear in `~/myvcl` which will contain all available VCL modules.
+  </li>
+  <li>
+	From the `~/myvcl` folder run the VCL preporcessor to build your VCL distro: <div class='bogus-wrapper'><notextile><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'> node ./node_modules/vcl-preprocessor/bin/vcl.js index.styl compiled.css
+</span></code></pre></td></tr></table></div></figure></notextile></div>You should see &#8220;✔ Succesfully compiled input to compiled.css&#8221; in the terminal if everything is fine.
+  </li>
+</ol>
+<h2>Designing a page with VCL</h2>
+<ol>
+  <li>Now when we have a compiled version of VCL. We can start designing a blog page. First, let&#8217;s create a folder within the HTTP web server&#8217;s root folder and copy <em>compiled.css</em> in there and the <em>fonts</em> folder into the parent folder. I use Apache HTTP server. Its root folder is /var/www and I create a folder /var/www/vcl_blog/public. So I can access it via a web browser at http://localhost/vcl_blog/public/.
+  </li>
+  <li>In the /var/www/vcl_blog/public/ folder create a file called <em>index.html</em> and place the following content in there:
+	<div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span>&#8220;index.html&#8221;  (index.html)</span> <a href='/downloads/code/index.html'>download</a></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+<span class='line-number'>25</span>
+<span class='line-number'>26</span>
+<span class='line-number'>27</span>
+<span class='line-number'>28</span>
+<span class='line-number'>29</span>
+<span class='line-number'>30</span>
+<span class='line-number'>31</span>
+<span class='line-number'>32</span>
+<span class='line-number'>33</span>
+<span class='line-number'>34</span>
+<span class='line-number'>35</span>
+<span class='line-number'>36</span>
+<span class='line-number'>37</span>
+<span class='line-number'>38</span>
+<span class='line-number'>39</span>
+<span class='line-number'>40</span>
+<span class='line-number'>41</span>
+<span class='line-number'>42</span>
+<span class='line-number'>43</span>
+<span class='line-number'>44</span>
+<span class='line-number'>45</span>
+<span class='line-number'>46</span>
+<span class='line-number'>47</span>
+<span class='line-number'>48</span>
+<span class='line-number'>49</span>
+<span class='line-number'>50</span>
+<span class='line-number'>51</span>
+<span class='line-number'>52</span>
+<span class='line-number'>53</span>
+<span class='line-number'>54</span>
+<span class='line-number'>55</span>
+<span class='line-number'>56</span>
+<span class='line-number'>57</span>
+<span class='line-number'>58</span>
+<span class='line-number'>59</span>
+<span class='line-number'>60</span>
+<span class='line-number'>61</span>
+<span class='line-number'>62</span>
+<span class='line-number'>63</span>
+<span class='line-number'>64</span>
+<span class='line-number'>65</span>
+<span class='line-number'>66</span>
+<span class='line-number'>67</span>
+<span class='line-number'>68</span>
+<span class='line-number'>69</span>
+<span class='line-number'>70</span>
+<span class='line-number'>71</span>
+<span class='line-number'>72</span>
+<span class='line-number'>73</span>
+<span class='line-number'>74</span>
+<span class='line-number'>75</span>
+<span class='line-number'>76</span>
+<span class='line-number'>77</span>
+<span class='line-number'>78</span>
+<span class='line-number'>79</span>
+<span class='line-number'>80</span>
+<span class='line-number'>81</span>
+<span class='line-number'>82</span>
+<span class='line-number'>83</span>
+</pre></td><td class='code'><pre><code class='html'><span class='line'><span class="cp">&lt;!doctype html&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="nt">&lt;html</span> <span class="na">lang=</span><span class="s">&quot;en&quot;</span><span class="nt">&gt;</span>
+</span><span class='line'><span class="nt">&lt;head&gt;</span>
+</span><span class='line'>  <span class="nt">&lt;meta</span> <span class="na">charset=</span><span class="s">&quot;utf-8&quot;</span><span class="nt">&gt;</span>
+</span><span class='line'>  <span class="nt">&lt;title&gt;</span>VCL Blog<span class="nt">&lt;/title&gt;</span>
+</span><span class='line'>  <span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">&quot;stylesheet&quot;</span> <span class="na">href=</span><span class="s">&quot;compiled.css&quot;</span><span class="nt">&gt;</span>
+</span><span class='line'>  <span class="c">&lt;!--[if lt IE 9]&gt;</span>
+</span><span class='line'><span class="c">  &lt;script src=&quot;http://html5shiv.googlecode.com/svn/trunk/html5.js&quot;&gt;&lt;/script&gt;</span>
+</span><span class='line'><span class="c">  &lt;![endif]--&gt;</span>
+</span><span class='line'><span class="nt">&lt;/head&gt;</span>
+</span><span class='line'><span class="nt">&lt;body&gt;</span>
+</span><span class='line'>  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;vclGridRow vclVAlignMiddle&quot;</span><span class="nt">&gt;</span>
+</span><span class='line'>    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;vclGridSpan-3 vclAlignCentered&quot;</span><span class="nt">&gt;&lt;a</span> <span class="na">href=</span><span class="s">&quot;#&quot;</span><span class="nt">&gt;&lt;h1&gt;</span> VCL blog <span class="nt">&lt;/h1&gt;&lt;/a&gt;&lt;/div&gt;</span>
+</span><span class='line'>    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;vclGridSpan-12&quot;</span><span class="nt">&gt;</span>
+</span><span class='line'>      <span class="nt">&lt;nav</span> <span class="na">id=</span><span class="s">&quot;nav&quot;</span> <span class="na">class=</span><span class="s">&quot;vclHorizontalNav vclHorizontalNavLight&quot;</span> <span class="na">role=</span><span class="s">&quot;navigation&quot;</span><span class="nt">&gt;&lt;ul&gt;</span>
+</span><span class='line'>        <span class="nt">&lt;li&gt;</span>
+</span><span class='line'>            <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;#&quot;</span><span class="nt">&gt;</span>About Me
+</span><span class='line'>            <span class="nt">&lt;/a&gt;</span>
+</span><span class='line'>        <span class="nt">&lt;/li&gt;</span>
+</span><span class='line'>        <span class="nt">&lt;li&gt;</span>
+</span><span class='line'>            <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;#&quot;</span><span class="nt">&gt;</span>Posts
+</span><span class='line'>            <span class="nt">&lt;/a&gt;</span>
+</span><span class='line'>        <span class="nt">&lt;/li&gt;</span>
+</span><span class='line'>        <span class="nt">&lt;li&gt;</span>
+</span><span class='line'>            <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;#&quot;</span><span class="nt">&gt;</span>Portfolio
+</span><span class='line'>            <span class="nt">&lt;/a&gt;</span>
+</span><span class='line'>        <span class="nt">&lt;/li&gt;</span>
+</span><span class='line'>        <span class="nt">&lt;li&gt;</span>
+</span><span class='line'>            <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;#&quot;</span><span class="nt">&gt;</span>Contact
+</span><span class='line'>            <span class="nt">&lt;/a&gt;</span>
+</span><span class='line'>        <span class="nt">&lt;/li&gt;</span>
+</span><span class='line'>      <span class="nt">&lt;/ul&gt;</span>
+</span><span class='line'>      <span class="nt">&lt;/nav&gt;</span>
+</span><span class='line'>    <span class="nt">&lt;/div&gt;</span>
+</span><span class='line'>  <span class="nt">&lt;/div&gt;</span>
+</span><span class='line'>  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;vclGridRow&quot;</span><span class="nt">&gt;</span>
+</span><span class='line'>    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;vclGridSpan-3 vclAlignCentered&quot;</span><span class="nt">&gt;</span>
+</span><span class='line'>      <span class="nt">&lt;h2&gt;</span>Recent blog posts<span class="nt">&lt;/h2&gt;</span>
+</span><span class='line'>      <span class="nt">&lt;nav</span> <span class="na">id=</span><span class="s">&quot;nav&quot;</span> <span class="na">class=</span><span class="s">&quot;vclTreeNav vclTreeNavLight&quot;</span> <span class="na">role=</span><span class="s">&quot;navigation&quot;</span><span class="nt">&gt;&lt;ul&gt;</span>
+</span><span class='line'>        <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">&quot;vclAlignLeft&quot;</span><span class="nt">&gt;</span>
+</span><span class='line'>            <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;#&quot;</span><span class="nt">&gt;</span>Blog post # 1
+</span><span class='line'>           <span class="nt">&lt;span&gt;</span>by Alex<span class="nt">&lt;/span&gt;</span> <span class="nt">&lt;/a&gt;</span>
+</span><span class='line'>        <span class="nt">&lt;/li&gt;</span>
+</span><span class='line'>        <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">&quot;vclAlignLeft&quot;</span><span class="nt">&gt;</span>
+</span><span class='line'>            <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;#&quot;</span><span class="nt">&gt;</span>Blog post # 2
+</span><span class='line'>            <span class="nt">&lt;span&gt;</span>by Alex<span class="nt">&lt;/span&gt;&lt;/a&gt;</span>
+</span><span class='line'>        <span class="nt">&lt;/li&gt;</span>
+</span><span class='line'>        <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">&quot;vclAlignLeft&quot;</span><span class="nt">&gt;</span>
+</span><span class='line'>            <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;#&quot;</span><span class="nt">&gt;</span>Blog post # 3
+</span><span class='line'>            <span class="nt">&lt;span&gt;</span>by Alex<span class="nt">&lt;/span&gt;&lt;/a&gt;</span>
+</span><span class='line'>        <span class="nt">&lt;/li&gt;</span>
+</span><span class='line'>        <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">&quot;vclAlignLeft&quot;</span><span class="nt">&gt;</span>
+</span><span class='line'>            <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;#&quot;</span><span class="nt">&gt;</span>Blog post # 4
+</span><span class='line'>            <span class="nt">&lt;span&gt;</span>by Alex<span class="nt">&lt;/span&gt;&lt;/a&gt;</span>
+</span><span class='line'>        <span class="nt">&lt;/li&gt;</span>
+</span><span class='line'>      <span class="nt">&lt;/ul&gt;</span>
+</span><span class='line'>      <span class="nt">&lt;/nav&gt;</span>
+</span><span class='line'>      <span class="nt">&lt;h2&gt;</span>Blog search<span class="nt">&lt;/h2&gt;</span>
+</span><span class='line'>     	<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;vclInputGroup&quot;</span><span class="nt">&gt;</span>
+</span><span class='line'>	  <span class="nt">&lt;input</span> <span class="na">autocomplete=</span><span class="s">&quot;off&quot;</span> <span class="na">type=</span><span class="s">&quot;text&quot;</span><span class="nt">&gt;</span>
+</span><span class='line'>	  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;vclInputGroupButton&quot;</span><span class="nt">&gt;&lt;button</span> <span class="na">class=</span><span class="s">&quot;vclButtonStd vclSquare&quot;</span><span class="nt">&gt;&lt;span&gt;&lt;i</span> <span class="na">class=</span><span class="s">&quot;fa fa-search&quot;</span><span class="nt">&gt;&lt;/i&gt;&lt;/span&gt;&lt;/button&gt;&lt;/span&gt;</span>
+</span><span class='line'>	<span class="nt">&lt;/div&gt;</span>
+</span><span class='line'>    <span class="nt">&lt;/div&gt;</span>
+</span><span class='line'>    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;vclGridSpan-12 vclAlignLeft&quot;</span><span class="nt">&gt;</span>
+</span><span class='line'>      <span class="nt">&lt;h2&gt;</span>Blog post # 1<span class="nt">&lt;/h2&gt;</span>
+</span><span class='line'>      <span class="nt">&lt;hr&gt;</span>
+</span><span class='line'>      <span class="nt">&lt;p&gt;</span>
+</span><span class='line'>      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed in metus a magna lacinia dapibus quis sit amet felis. Etiam id ante mi. In a justo ac ipsum pretium gravida sit amet ultrices urna. Sed tempor luctus bibendum. Donec consequat ipsum eu urna mattis, at vestibulum sem porta. Integer posuere placerat ante sed tristique. Maecenas adipiscing sapien sit amet massa sollicitudin, at lobortis ante vehicula. Proin sagittis orci ut pretium fermentum. Nunc eleifend massa ut tristique placerat. Proin hendrerit luctus dui sit amet tincidunt. Nam vel auctor arcu. Quisque sit amet orci ipsum. Integer laoreet fermentum nulla, eleifend dapibus odio tincidunt sed. Vestibulum ut augue et ante sagittis ullamcorper. Nullam at ligula vitae lacus molestie ullamcorper id ac mauris. Maecenas aliquam libero purus, et suscipit felis feugiat id.<span class="nt">&lt;/p&gt;&lt;p&gt;</span>
+</span><span class='line'>Sed posuere quam velit, quis consequat ante sagittis ac. Suspendisse non lectus id libero blandit volutpat. Nullam sagittis felis feugiat justo adipiscing, non volutpat elit ornare. Nunc dignissim mauris ac erat luctus rhoncus. Quisque vulputate purus turpis, luctus suscipit urna sollicitudin id. Aenean lacinia, erat at hendrerit interdum, mi nisl malesuada elit, quis mattis tellus felis in mi. Proin molestie neque ac augue adipiscing, vitae tempus ante tempor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nec erat non augue ullamcorper bibendum.<span class="nt">&lt;/p&gt;&lt;p&gt;</span>
+</span><span class='line'>Phasellus vestibulum arcu sed arcu varius, dapibus eleifend velit pellentesque. Morbi risus nisl, rhoncus sit amet dui vel, pellentesque porttitor nibh. Proin vitae ullamcorper tortor, non cursus purus. Ut elementum varius turpis, nec placerat mi fringilla vitae. Vivamus semper mattis auctor. Nam scelerisque eget lacus non adipiscing. Duis vitae purus vulputate, laoreet velit et, sodales enim. Cras congue vulputate metus, eget pretium ligula ultrices nec. Curabitur eget justo at erat rutrum dignissim in id massa. Phasellus vehicula, nibh eget imperdiet vulputate, lacus elit sodales lorem, sagittis adipiscing dui risus vitae magna. Etiam pharetra interdum tortor, eu semper felis rhoncus in. Duis id tellus sagittis, eleifend libero eget, accumsan augue. Vivamus faucibus enim vitae orci tristique, tincidunt suscipit tellus porta. Fusce felis dui, scelerisque a rutrum vitae, lobortis et mauris. Fusce vel posuere lacus. Quisque laoreet, tellus nec adipiscing cursus, odio dui consequat felis, lobortis accumsan neque dui quis erat.<span class="nt">&lt;/p&gt;&lt;p&gt;</span>
+</span><span class='line'>Etiam commodo porttitor tellus quis fermentum. Donec lacinia magna tellus, at tempus sapien sodales in. Vestibulum scelerisque condimentum dui, lacinia convallis mi faucibus quis. Quisque nec mi aliquet, egestas turpis imperdiet, venenatis nisl. Proin vehicula ante neque, eget semper dui elementum ac. Pellentesque laoreet bibendum ultricies. Suspendisse et ullamcorper dolor. Nulla venenatis lacus mollis neque consectetur posuere. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Praesent et diam sit amet ante facilisis dapibus non vitae nunc. In non diam mollis, cursus neque eu, consectetur nunc.<span class="nt">&lt;/p&gt;&lt;p&gt;</span>
+</span><span class='line'>Sed quis semper leo, vitae tristique sapien. Vivamus molestie rhoncus ultricies. Vestibulum id interdum est. Fusce non ultricies felis. In tempor placerat blandit. Sed eros est, feugiat eget semper ac, facilisis nec massa. Aenean et quam vel erat gravida suscipit.
+</span><span class='line'>      <span class="nt">&lt;/p&gt;</span>
+</span><span class='line'>    <span class="nt">&lt;/div&gt;</span>
+</span><span class='line'>  <span class="nt">&lt;/div&gt;</span>
+</span><span class='line'><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;vclGridRow&quot;</span><span class="nt">&gt;</span>
+</span><span class='line'>    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;vclGridSpan-15 vclAlignCentered&quot;</span><span class="nt">&gt;</span>
+</span><span class='line'>      2014 (c) Alex Rudenko
+</span><span class='line'>    <span class="nt">&lt;/div&gt;</span>
+</span><span class='line'><span class="nt">&lt;/div&gt;</span>
+</span><span class='line'><span class="nt">&lt;/body&gt;</span>
+</span><span class='line'><span class="nt">&lt;/html&gt;</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div>
+  </li>
+  <li>Basically, once you&#8217;ve done this you can open index.html in the browser (e.g. http://localhost/vcl_blog/public/index.html) and you&#8217;ll see the end result. But let me explain what&#8217;s written in the index.html
+	<ul>
+		<li>First, we include our compiled version of VCL using: <div class='bogus-wrapper'><notextile><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='html'><span class='line'><span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">&quot;stylesheet&quot;</span> <span class="na">href=</span><span class="s">&quot;compiled.css&quot;</span> <span class="nt">/&gt;</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div></li>
+		<li>Using the CSS class <em>vclGridRow</em> we define a new row of our layout. Class <em>vclVAlignMiddle</em> specifies the vertical alignment in the middle</li>
+		<li>Using the CSS class <em>vclGridSpan-3</em> we define that the element will take 3/15 of the page width. This kind of classes is typical for fluid-grid CSS frameworks. The total width of the page is 15 as defined by VCL.</li>
+		<li>We define a horizontal menu on the top of the page using the vclHorizontalNav class: <div class='bogus-wrapper'><notextile><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='html'><span class='line'> <span class="nt">&lt;nav</span> <span class="na">id=</span><span class="s">&quot;nav&quot;</span> <span class="na">class=</span><span class="s">&quot;vclHorizontalNav vclHorizontalNavLight&quot;</span> <span class="na">role=</span><span class="s">&quot;navigation&quot;</span><span class="nt">&gt;</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div> 
+		<li>We define a tree (sidebar) navigation using the <em>vclTreeNav</em> class: <div class='bogus-wrapper'><notextile><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='html'><span class='line'> <span class="nt">&lt;nav</span> <span class="na">id=</span><span class="s">&quot;nav&quot;</span> <span class="na">class=</span><span class="s">&quot;vclTreeNav vclTreeNavLight&quot;</span> <span class="na">role=</span><span class="s">&quot;navigation&quot;</span><span class="nt">&gt;</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div> 
+		<li>To define search box we use the vclInputGroup component: 
+<div class='bogus-wrapper'><notextile><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+</pre></td><td class='code'><pre><code class='html'><span class='line'><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;vclInputGroup&quot;</span><span class="nt">&gt;</span>
+</span><span class='line'>	  <span class="nt">&lt;input</span> <span class="na">autocomplete=</span><span class="s">&quot;off&quot;</span> <span class="na">type=</span><span class="s">&quot;text&quot;</span> <span class="nt">/&gt;</span>
+</span><span class='line'>	  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;vclInputGroupButton&quot;</span><span class="nt">&gt;&lt;button</span> <span class="na">class=</span><span class="s">&quot;vclButtonStd vclSquare&quot;</span><span class="nt">&gt;&lt;span&gt;&lt;i</span> <span class="na">class=</span><span class="s">&quot;fa fa-search&quot;</span><span class="nt">&gt;&lt;/i&gt;&lt;/span&gt;&lt;/button&gt;&lt;/span&gt;</span>
+</span><span class='line'>	<span class="nt">&lt;/div&gt;</span>
+</span><span class='line'>
+</span></code></pre></td></tr></table></div></figure></notextile></div>
+		</li>
+	
+  
+
+<p>
+Now we&#8217;ve learned how to get started with VCL. Read more about properties and configuration options of each one of the VCL modules on <a href="https://github.com/vcl/vcl">GitHub</a>.
+</p>
+
+</nav></li></nav></li></ul></li></ol>
+]]></content>
+  </entry>
+  
+</feed>

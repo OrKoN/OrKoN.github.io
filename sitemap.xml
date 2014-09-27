@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  
+  
+  <url>
+    <loc>http://blog.alex-rudenko.com/2014/09/21/setting-up-smtp-relay-using-postfix-on-ubuntu-14-dot-04/</loc>
+    <lastmod>2014-09-21T10:33:50+02:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.alex-rudenko.com/2014/09/21/non-interactive-ssh-login-using-password/</loc>
+    <lastmod>2014-09-21T10:05:46+02:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.alex-rudenko.com/2014/09/21/learning-vcl-how-to-build-a-vcl-component-demo/</loc>
+    <lastmod>2014-09-21T09:21:08+02:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.alex-rudenko.com/2014/09/21/converting-flv-to-mp4-with-ubuntu-linux-and-avconv/</loc>
+    <lastmod>2014-09-21T09:12:01+02:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.alex-rudenko.com/2014/08/31/extending-your-ubuntu-desktop-with-custom-indicator-applets-using-python3/</loc>
+    <lastmod>2014-08-31T13:37:34+02:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.alex-rudenko.com/2014/08/18/getting-started-with-a-new-css-framework-called-visual-component-library-vcl/</loc>
+    <lastmod>2014-08-18T23:01:00+02:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.alex-rudenko.com/2014/05/31/android-development-studio-create-string-resource-automatically/</loc>
+    <lastmod>2014-05-31T19:05:00+02:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.alex-rudenko.com/2014/03/23/ideas/</loc>
+    <lastmod>2014-03-23T20:50:00+01:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.alex-rudenko.com/2014/02/21/how-to-find-text-strings-in-pdf-files/</loc>
+    <lastmod>2014-02-21T20:00:00+01:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.alex-rudenko.com/2013/11/19/how-to-configure-git-for-the-android-project-in-eclipse/</loc>
+    <lastmod>2013-11-19T18:46:00+01:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.alex-rudenko.com/2013/10/20/turn-your-web-browser-into-text-editor/</loc>
+    <lastmod>2013-10-20T19:53:00+02:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.alex-rudenko.com/2013/10/20/moved-my-blog-to-octopress-engine/</loc>
+    <lastmod>2013-10-20T19:08:00+02:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  
+  
+  <url>
+    <loc>http://blog.alex-rudenko.com/blog/archives/</loc>
+    <lastmod>2014-09-26T20:01:51+02:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.alex-rudenko.com/blog/projects/</loc>
+    <lastmod>2014-09-26T20:01:51+02:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.alex-rudenko.com/</loc>
+    <lastmod>2014-09-26T20:01:51+02:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.alex-rudenko.com/blog/study-project-acme-webshop/</loc>
+    <lastmod>2014-09-26T20:01:51+02:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.alex-rudenko.com/blog/study-project-research-papers/</loc>
+    <lastmod>2014-09-26T20:01:51+02:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  
+  <url>
+    <loc>http://blog.alex-rudenko.com/downloads/code/index.html</loc>
+    <lastmod>2014-09-06T19:50:43Z</lastmod>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.alex-rudenko.com/test.html</loc>
+    <lastmod>2014-09-07T19:08:38Z</lastmod>
+    <priority>0.6</priority>
+  </url>
+  
+</urlset>
