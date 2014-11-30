@@ -4,7 +4,7 @@
   <title><![CDATA[Web 0.0]]></title>
   <link href="http://OrKoN.github.io/atom.xml" rel="self"/>
   <link href="http://OrKoN.github.io/"/>
-  <updated>2014-11-08T19:55:02+01:00</updated>
+  <updated>2014-11-30T15:51:37+01:00</updated>
   <id>http://OrKoN.github.io/</id>
   <author>
     <name><![CDATA[Alex Rudenko]]></name>
@@ -12,6 +12,18 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[My New Blogging Project]]></title>
+    <link href="http://OrKoN.github.io/2014/11/30/my-new-blogging-project/"/>
+    <updated>2014-11-30T15:48:37+01:00</updated>
+    <id>http://OrKoN.github.io/2014/11/30/my-new-blogging-project</id>
+    <content type="html"><![CDATA[<p>Hi,</p>
+
+<p>meet my new blogging project: <a href="http://js-for.ninja">http://js-for.ninja</a>. Please subscribe and comment.</p>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Setting Up SMTP Relay Using Postfix on Ubuntu 14.04]]></title>
